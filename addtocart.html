@@ -1,0 +1,119 @@
+<html>
+<head>
+<title>All Products - Comhub</title>
+<link rel="stylesheet" href="style.css">
+<link rel="shortcut icon" type="image/x-icon" href="comhubicon.ico"/> 
+<link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<link href="https://fonts.googleapis.com/css2?family=Goldman:wght@700&display=swap" rel="stylesheet">
+<script src="https://cdn.jsdelivr.net/gh/cferdinandi/smooth-scroll/dist/smooth-scroll.polyfills.min.js"></script>
+</head>
+<body>
+	<img src="logo.jpg" class="logo">
+<div id="sideNav">
+	<nav>
+	<ul>
+		<li><a href="#banner">Home</a></li>
+		<li><a href="#feature">About Us</a></li>
+		<li><a href="#products">Product</a></li>
+		<li><a href="#footer">Contact Us</a></li>
+	</ul>
+</nav>
+</div>
+<div id="menubtn">
+	<img src="menu.png" id="menu">
+</div>	
+</section>	
+<section id="products">
+	<div class="title-text">
+			
+		<p>All Products</p>
+		<h2>Buy Now!</h2>
+		<div class="row row-2">
+		<select>
+			<option>Sort By</option>
+			<option>Sort By Price</option>
+			<option>Sort By Popularity</option>
+			<option>Sort By Rating</option>
+		</select>
+	</div>
+	</div>
+<div class="small-container cart-page">
+	<table>
+		<tr>
+			<th>Product</th>
+			<th>Quantity</th>
+			<th>Subtotal</th>
+		</tr>
+		<tr>
+			<td>
+			<div class="cart-info">
+				<img src="buy-1.png">
+				<div>
+					<p>Gigaware K550 Keyboard</p>
+					<small>Price : P949.00 </small>
+					<br>
+					<a href=""> - </a> 
+				</div>
+			</div>
+		</td>
+			<td><input type="number" value="1"></td>
+			<td><i class="fa fa-shopping-cart"> 999</td>
+		</tr>
+	</table>
+</div>
+<section id="footer">
+	<img src="footer.jpg" class="footer-img">
+	<div class="title-text">
+		<p>Contact Us</p>
+		<h2>Welcome! Visit Us</h2>
+	</div>
+	<div class="footer-row">
+		<div class="footer-left">
+			<h4>Opening Hours</h4>
+			<p><i class="fa fa-clock-o"></i> Monday to Friday - 10:00am to 8:00pm</p>
+			<p><i class="fa fa-clock-o"></i> Saturday and Sunday - 10:00am to 10:00pm</p>
+		</div>
+		<div class="footer-right">
+		<h4>Contact Us Here</h4> 
+		<p>comhub.com</p>
+		<div class="social-links">
+		<a href="https://www.facebook.com/">	
+		<i class="fa fa-facebook-official"> </i></a>
+		<a href="https://www.twitter.com/home">	
+		<i class="fa fa-twitter-square"></i></a>
+		<a href="https://accounts.google.com/">
+		<i class="fa fa-envelope-o"></i></a>
+		<i class="fa fa-info-circle"></i>
+	</div>
+		</div>
+	</div>
+</section>
+
+<script>
+var menubtn = document.getElementById("menubtn")	
+var sideNav = document.getElementById("sideNav")
+var menu = document.getElementById("menu")
+
+sideNav.style.right = "-250px";
+
+menubtn.onclick = function(){
+	if(sideNav.style.right == "-240px"){
+		sideNav.style.right = "0";
+		menu.src = "close.png";
+	}
+	else{
+		sideNav.style.right = "-240px";
+		menu.src = "menu.png";
+	}
+}
+
+
+var scroll = new SmoothScroll('a[href*="#"]', {
+	speed: 1000,
+	speedAsDuration: true
+});
+
+</script>
+</body>
+</html>
