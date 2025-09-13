@@ -1,5 +1,5 @@
 # Comhub
-An online store for genuine computers, software, and office equipment, offering competitive prices, reliable support, and easy access to quality tech products.
+An online store for genuine computers, software, and office equipment, offering competitive prices, reliable support, and easy access to quality tech products. One of the main projects during my college days.
 
 ## Preview
 To see a preview of the website design, check the images below:  
